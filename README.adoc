@@ -21,8 +21,10 @@ These are simpler Puzzlers where you have to make a short fit to the code and an
 
 You will need
 
-- IntelliJ CE
-- a Download of this repository
+- Install an IDE such as link:https://www.jetbrains.com/idea/download/[IntelliJ Download]
+- a Download ZIP of this repository, see the [Clone] button in the top right and unpack it.
+- Open the project via the `pom.xml` in your IDE.
+- Check you can do a maven install of the root project (on the right in IntelliJ)
 
 === Stack Traces
 

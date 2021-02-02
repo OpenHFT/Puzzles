@@ -5,7 +5,7 @@ import net.openhft.chronicle.core.StackTrace;
 import org.jetbrains.annotations.NotNull;
 
 public class AnotherStackTraceMain {
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) {
         Thread t = new Thread(AnotherStackTraceMain::thinking, "background");
         t.start();
         Jvm.pause(50);

@@ -38,6 +38,13 @@ In link:https://github.com/OpenHFT/Puzzles/blob/main/Puzzlers/stack/src/main/jav
 
 === Ping Pong example
 
+In link:https://github.com/OpenHFT/Puzzles/blob/main/Puzzlers/CAS/src/main/java/net/openhft/caspuzzler/PingMain.java[PingMain.java] and link:https://github.com/OpenHFT/Puzzles/blob/main/Puzzlers/CAS/src/main/java/net/openhft/caspuzzler/PongMain.java[PongMain.java] two program alternate a value via shared memory.
+
+- What does `10 * time / count / 10.0` do?
+- What is the difference between milli-seconds, micro-seconds, nano-seconds?
+- When you run these two programs, what are the results? 
+- How do you know this is writing to memory but not to disk with each operation?
+
 == Exercises
 
 These are exercises where you need to write some code and provide longer answers.

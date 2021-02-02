@@ -1,0 +1,35 @@
+= Puzzles
+Peter Lawrey
+
+These are some Puzzles and exercises to get you thinking about low level Java programming and using Chronicle's OpenHFT software
+
+While each answer is very short, and if you know it you can answer it quickly, it can take a significant amount of time to understand the code and find that answer.
+
+This is typical of the work we do.
+We are not looking for large amounts of code or code changes, but thoughtful and necessary ones.
+Sometimes you can be the most productive changing a single line of code.
+Other days you might write hundreds of lines of code and documentation.
+
+NOTE: These puzzles will exposure you to parts of Core Java and ways of using it that developers with 10 or 20 years experience may have never used it.
+In many cases, deliberately so as we are looking to put Java to its limits.
+
+== Puzzlers
+
+These are simpler Puzzlers where you have to make a short fit to the code and answer one or more questions
+
+=== Stack Traces
+
+In link:PrintStackTraceMain.java[PrintStackTraceMain] the code prints the stack trace two different ways.
+
+- Why does the stack trace include the createStackTrace method?
+- Why is it different the second time.
+
+In link:AnotherStackTraceMain.java[AnotherStackTraceMain] the code prints a stack trace from another thread.
+
+- There is a stack trace line `net.openhft.puzzlers.stack.AnotherStackTraceMain$$Lambda$1/214126413.run` what does this mean?
+-
+
+== Exercises
+
+These are exercises where you need to write some code and provide longer answers.
+

@@ -31,7 +31,7 @@ You will need
 In link:https://github.com/OpenHFT/Puzzles/blob/main/Puzzlers/stack/src/main/java/net/openhft/stackpuzzler/PrintStackTraceMain.java[PrintStackTraceMain] the code prints the stack trace two different ways.
 
 - Why does the stack trace include the createStackTrace method?
-- Why is it different the second time.
+- Why is it different the second time. Hint: stepping through the code in your debugger should help.
 
 In link:https://github.com/OpenHFT/Puzzles/blob/main/Puzzlers/stack/src/main/java/net/openhft/stackpuzzler/AnotherStackTraceMain.java[AnotherStackTraceMain] the code prints a stack trace from another thread.
 

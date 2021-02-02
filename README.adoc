@@ -17,17 +17,26 @@ In many cases, deliberately so as we are looking to put Java to its limits.
 
 These are simpler Puzzlers where you have to make a short fit to the code and answer one or more questions
 
+=== Setup
+
+You will need
+
+- IntelliJ CE
+- a Download of this repository
+
 === Stack Traces
 
-In link:PrintStackTraceMain.java[PrintStackTraceMain] the code prints the stack trace two different ways.
+In link:https://github.com/OpenHFT/Puzzles/blob/main/Puzzlers/stack/src/main/java/net/openhft/stackpuzzler/PrintStackTraceMain.java[PrintStackTraceMain] the code prints the stack trace two different ways.
 
 - Why does the stack trace include the createStackTrace method?
 - Why is it different the second time.
 
-In link:AnotherStackTraceMain.java[AnotherStackTraceMain] the code prints a stack trace from another thread.
+In link:https://github.com/OpenHFT/Puzzles/blob/main/Puzzlers/stack/src/main/java/net/openhft/stackpuzzler/AnotherStackTraceMain.java[AnotherStackTraceMain] the code prints a stack trace from another thread.
 
+- What does the line `at net.openhft.stackpuzzler.AnotherStackTraceMain.thinking(AnotherStackTraceMain.java:19)` show?
 - There is a stack trace line `net.openhft.puzzlers.stack.AnotherStackTraceMain$$Lambda$1/214126413.run` what does this mean?
--
+
+=== Ping Pong example
 
 == Exercises
 

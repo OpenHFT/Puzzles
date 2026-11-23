@@ -19,12 +19,22 @@ These are simpler Puzzlers where you have to make a short fit to the code and an
 
 === Setup
 
-You will need
+Download or clone this repository and open its root `pom.xml` as a Maven project in your IDE, for example link:https://www.jetbrains.com/idea/download/[IntelliJ IDEA].
+With JDK 17, 21 or 25, build all modules from the repository root.
 
-- Install an IDE such as link:https://www.jetbrains.com/idea/download/[IntelliJ Download]
-- a Download ZIP of this repository, see the [Code] button in the top right and unpack it.
-- Open the project via the `pom.xml` in your IDE.
-- Check you can do a maven install of the root project (on the right in IntelliJ)
+[source,shell]
+----
+mvn clean install
+----
+
+For the IDE application run configurations, enter these JVM arguments under *VM options*.
+
+[source,text]
+----
+--add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+--add-exports=java.base/sun.nio.ch=ALL-UNNAMED
+--add-exports=java.base/jdk.internal.ref=ALL-UNNAMED
+----
 
 === Stack Traces
 
@@ -35,12 +45,15 @@ In link:https://github.com/OpenHFT/Puzzles/blob/main/Puzzlers/stack/src/main/jav
 
 In link:https://github.com/OpenHFT/Puzzles/blob/main/Puzzlers/stack/src/main/java/net/openhft/stackpuzzler/AnotherStackTraceMain.java[AnotherStackTraceMain] the code prints a stack trace from another thread.
 
-- What does the line `at net.openhft.stackpuzzler.AnotherStackTraceMain.thinking(AnotherStackTraceMain.java:19)` show?
-- There is a stack trace line `net.openhft.puzzlers.stack.AnotherStackTraceMain$$Lambda$1/214126413.run` what does this mean?
+- What does the line `at net.openhft.stackpuzzler.AnotherStackTraceMain.thinking(AnotherStackTraceMain.java:22)` show?
+- Some JDKs show a frame named `AnotherStackTraceMain$$Lambda$1/214126413.run`. What does that frame represent?
 
 === Ping Pong example
 
 In link:https://github.com/OpenHFT/Puzzles/blob/main/Puzzlers/CAS/src/main/java/net/openhft/caspuzzler/PingMain.java[PingMain.java] and link:https://github.com/OpenHFT/Puzzles/blob/main/Puzzlers/CAS/src/main/java/net/openhft/caspuzzler/PongMain.java[PongMain.java] two program alternate a value via shared memory.
+
+Run `PingMain` and `PongMain` in separate JVMs with the same working directory so they share `data.tmp`.
+The first process prints `waiting` until its peer starts. Both then print an average time per CAS.
 
 - What does `10 * time / count / 10.0` do?
 - What is the difference between milli-seconds, micro-seconds, nano-seconds?

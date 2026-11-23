@@ -22,11 +22,10 @@
     <parent>
         <groupId>net.openhft</groupId>
         <artifactId>java-parent-pom</artifactId>
-        <version>1.1.24</version>
+        <version>2026.1</version>
         <relativePath/>
     </parent>
 
-    <groupId>net.openhft</groupId>
     <artifactId>puzzles-parent</artifactId>
     <version>2.20.1</version>
     <name>OpenHFT/Puzzles</name>
@@ -43,13 +42,13 @@
                 <groupId>net.openhft</groupId>
                 <artifactId>third-party-bom</artifactId>
                 <type>pom</type>
-                <version>3.19.4</version>
+                <version>2026.0</version>
                 <scope>import</scope>
             </dependency>
             <dependency>
                 <groupId>net.openhft</groupId>
                 <artifactId>chronicle-bom</artifactId>
-                <version>2.21ea-SNAPSHOT</version>
+                <version>2026.28</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
